@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /* STARTED */
+    --started-color: #4f71b9;
+    --started-color-hover: #315ab3;
+    /* START */
+    --start-color: #58b14d;
+    --start-color-hover: #5aa130;
+    /* ALERT */
+    --alert-color: #df9713;
+    --alert-color-hover: #ce8d14;
+    /* DANGER */
+    --danger-color: #b14242;
+    --danger-color-hover: #a74646;
+}
+
+body {
+    margin: 5rem;
+}
+
+.page-title {
+    text-align: center;
+    font-family: Lato;
+    font-weight: 700;
+    color: #4471b8;
+    line-height: 10px;
+}
+
+.description {
+    text-align: center;
+    font-family: Lato;
+    font-weight: 400;
+    color: #4471b8;
+    font-size: 20px;
+}
+
+.my-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-list {
+    list-style: none;
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: Lato;
+    font-weight: 700;
+    color: #4471b8;
+}
+
+.button-style {
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-weight: 500;
+    width: 200px;
+    user-select: none;
+    cursor: pointer;
+    height: 50px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+/* PRIMARY LIST */
+
+.button-style:focus {
+    outline: 0;
+}
+
+.started {
+    background-color: var(--started-color);
+}
+
+.started:hover {
+    background-color: var(--started-color-hover);
+}
+
+.start {
+    background-color: var(--start-color);
+}
+
+.start:hover {
+    background-color: var(--start-color-hover);
+}
+
+.alert {
+    background-color: var(--alert-color);
+}
+
+.alert:hover {
+    background-color: var(--alert-color-hover);
+}
+
+.danger {
+    background-color: var(--danger-color);
+}
+
+.danger:hover {
+    background-color: var(--danger-color-hover);
+}
+
+/* OUTLINED LIST */
+
+.started-outlined {
+    border: solid 3px var(--started-color-hover);
+    background-color: transparent;
+    color: var(--started-color-hover);
+}
+
+.started-outlined:hover {
+    background-color: var(--started-color-hover);
+    color: #fff;
+}
+
+.start-outlined {
+    border: solid 3px var(--start-color-hover);
+    background-color: transparent;
+    color: var(--start-color-hover);
+}
+
+.start-outlined:hover {
+    background-color: var(--start-color-hover);
+    color: #fff;
+}
+
+.alert-outlined {
+    border: solid 3px var(--alert-color-hover);
+    background-color: transparent;
+    color: var(--alert-color-hover);
+}
+
+.alert-outlined:hover {
+    background-color: var(--alert-color-hover);
+    color: #fff;
+}
+
+.danger-outlined {
+    border: solid 3px var(--danger-color-hover);
+    background-color: transparent;
+    color: var(--danger-color-hover);
+}
+
+.danger-outlined:hover {
+    background-color: var(--danger-color-hover);
+    color: #fff;
+}
+
+/* MOTION LIST */
+
+.started-motion {
+    border: solid 3px var(--started-color-hover);
+    color: var(--started-color-hover);
+    box-shadow: inset 0 0 0 0 var(--started-color-hover);
+    transition: ease-out 0.6s;
+    background: transparent;
+}
+
+.started-motion:hover {
+    box-shadow: inset 300px 0 0 0 var(--started-color-hover);
+    color: #fff;
+}
+
+.start-motion {
+    border: solid 3px var(--start-color-hover);
+    color: var(--start-color-hover);
+    box-shadow: inset 0 0 0 0 var(--start-color-hover);
+    transition: ease-out 0.6s;
+    background: transparent;
+}
+
+.start-motion:hover {
+    box-shadow: inset 300px 0 0 0 var(--start-color-hover);
+    color: #fff;
+}
+
+.alert-motion {
+    border: solid 3px var(--alert-color-hover);
+    color: var(--alert-color-hover);
+    box-shadow: inset 0 0 0 0 var(--alert-color-hover);
+    transition: ease-out 0.6s;
+    background: transparent;
+}
+
+.alert-motion:hover {
+    box-shadow: inset 300px 0 0 0 var(--alert-color-hover);
+    color: #fff;
+}
+
+.danger-motion {
+    border: solid 3px var(--danger-color-hover);
+    color: var(--danger-color-hover);
+    box-shadow: inset 0 0 0 0 var(--danger-color-hover);
+    transition: ease-out 0.6s;
+    background: transparent;
+}
+
+.danger-motion:hover {
+    box-shadow: inset 300px 0 0 0 var(--danger-color-hover);
+    color: #fff;
+}
+
+
+/* MOTION TOP LIST */
+
+.started-motion {
+    border: solid 3px var(--started-color-hover);
+    color: var(--started-color-hover);
+    box-shadow: inset 0 0 0 0 var(--started-color-hover);
+    transition: ease-out 0.6s;
+    background: transparent;
+}
+
+.started-motion:hover {
+    box-shadow: inset 300px 0 0 0 var(--started-color-hover);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 991px) {
+    .my-container {
+        display: inherit;
+        text-align: center;
+    }
+
+    ul.button-list {
+        margin: 0;
+        padding: 0;
+    }
+}
